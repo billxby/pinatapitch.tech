@@ -1,16 +1,10 @@
-import Spline from '@splinetool/react-spline/next';
-import { Exo_2 } from "next/font/google";
 import Image from 'next/image';
 import Link from 'next/link';
-
-const exo2 = Exo_2({
-  variable: "--font-exo-2",
-  subsets: ["latin"],
-});
+import { AnimatedLogo } from './components/animatedlogo';
 
 export default function Home() {
   return (
-    <div className="items-center px-10 justify-items-center min-h-screen">
+    <div className="px-10 min-h-screen">
       <nav className="py-5 flex flex-row justify-between">
         <Link href="/">
           <Image src="/images/Logo Square Black.png" alt="Pinata Pitch" width="80" height="48" />
@@ -20,20 +14,16 @@ export default function Home() {
           April 26
         </div>
       </nav>
-      <header className="mx-auto max-w-[26rem]">
-        <div className="grid grid-cols-1 grid-rows-1 h-96 grid-flow-row">
-        <h1 className={`font-black ${exo2.className} text-9xl z-0 col-start-1 row-start-1 my-auto`}>
-          <h1 style={{ letterSpacing: "normal" }}>Pinata</h1>
-          <h1 style={{ letterSpacing: 22 }} className="mt-6">Pitch</h1>
-        </h1>
-        <Spline
-          className="z-10 col-start-1 row-start-1"
-          scene="https://prod.spline.design/BuuW6VXwkbJe-2il/scene.splinecode"
-        />
-        </div>
-        <h2>
-          Montreal&apos;s <u>First</u> Tech Pitch Competition
+      <header className="mx-auto py-auto max-w-[20rem] sm:max-w-[26rem] lg:max-w-[39rem]">
+        <AnimatedLogo />
+        <h2 className="text-2xl sm:text-[2rem] sm:leading-tight lg:text-5xl lg:leading-snug font-bold text-center">
+          Montreal&apos;s <u>Premier</u> Tech Pitch Competition
         </h2>
+        <Link href="https://tally.so/r/mYoybd" target="_blank">
+          <div className="py-2 my-8 rounded-full text-white text-center font-black bg-[#D102A8]">
+            Sign Up
+          </div>
+        </Link>
       </header>
       {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
