@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-
 export const metadata: Metadata = {
   title: "Piñata Pitch | Premier Tech Pitch Competition",
-  description: "Igniting passion for entrepreneurship in young minds to empower Montreal's startup tech scene.",
+  description:
+    "Igniting passion for entrepreneurship in young minds to empower Montreal's startup tech scene.",
 };
 
 export default function RootLayout({
@@ -14,11 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        {children}
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
