@@ -5,14 +5,14 @@ import { exo2 } from "../utils/font";
 
 const Prize: React.FC = () => {
   return (
-    <section className="mb-12 mt-36 flex flex-col items-center">
-      <div className="m-48 w-fit select-none rounded-2xl border-4 border-neutral-500 px-72 pb-44 pt-64 text-center shadow-[#7ABFFF] [box-shadow:_24px_24px_var(--tw-shadow-color)]">
+    <section className="3xl:mb-12 mb-6 mt-36 flex flex-col items-center">
+      <div className="3xl:m-48 3xl:rounded-2xl 3xl:border-4 3xl:px-72 3xl:pb-44 3xl:pt-64 3xl:[box-shadow:_24px_24px_var(--tw-shadow-color)] m-36 w-fit select-none rounded-xl border-2 border-neutral-500 px-36 pb-32 pt-36 text-center shadow-[#7ABFFF] [box-shadow:_12px_12px_var(--tw-shadow-color)]">
         <Image
           src="/images/confetti.svg"
           width="312"
           height="284"
           alt="Confetti"
-          className="absolute -mt-[26rem] ml-[52rem]"
+          className="3xl:h-80 3xl:-mt-[26rem] 3xl:ml-[52rem] absolute -mt-[14.5rem] ml-[32rem] h-36 object-contain"
           draggable="false"
         />
         <Image
@@ -20,19 +20,21 @@ const Prize: React.FC = () => {
           width="718"
           height="684"
           alt="Pinata"
-          className="absolute left-1/2 right-1/2 z-0 -ml-[24px] -mt-[36rem] max-w-[36rem] -translate-x-1/2 -scale-x-100 transform"
+          className="3xl:max-w-[36rem] 3xl:w-[45rem] 3xl:-mt-[36rem] absolute left-1/2 right-1/2 z-0 -ml-[1.5rem] -mt-[26rem] w-[26rem] -translate-x-1/2 -scale-x-100 transform object-contain"
           draggable="false"
         />
         <h1
           className={clsx(
-            "text-[11rem] font-bold leading-none shadow-[#7ABFFF] text-shadow",
+            "3xl:text-[11rem] text-9xl font-bold leading-none shadow-[#7ABFFF] text-shadow",
             exo2.className
           )}
         >
           $10,000
         </h1>
-        <h2 className="text-6xl font-bold leading-relaxed">Grand Prize</h2>
-        <p className="text-4xl">
+        <h2 className="3xl:text-6xl text-[2.75rem] font-bold leading-relaxed">
+          Grand Prize
+        </h2>
+        <p className="3xl:text-4xl text-[1.7rem] leading-tight">
           An unrestricted grant to continue
           <br />
           working on your ideas.
@@ -42,7 +44,7 @@ const Prize: React.FC = () => {
           width="312"
           height="284"
           alt="Confetti"
-          className="absolute -ml-[30rem] mt-16 rotate-180 transform"
+          className="3xl:h-80 3xl:-ml-[30rem] absolute -ml-[20.5rem] mt-[5rem] h-36 rotate-180 transform object-contain"
           draggable="false"
           // onClick={() => {}}
         />
