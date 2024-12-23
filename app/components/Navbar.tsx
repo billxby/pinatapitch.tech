@@ -1,16 +1,16 @@
-import React from "react";
+import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 import { exo2 } from "../utils/font";
-import clsx from "clsx";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="px-40 py-12 fixed left-0 top-0 flex flex-row items-center w-full bg-white border-b border-neutral-300 z-10">
+    <nav className="fixed left-0 top-0 z-10 flex w-full flex-row items-center border-b border-neutral-300 bg-white px-40 py-12">
       <Link href="/">
         <div
           className={clsx(
-            "flex flex-row gap-2 sm:gap-3 items-center text-3xl font-black",
+            "flex flex-row items-center gap-2 text-3xl font-black sm:gap-3",
             exo2.className
           )}
         >
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         target="_blank"
         className="ml-auto"
       >
-        <div className="w-fit text-xl py-3 px-24 rounded-full text-white text-center font-black bg-black">
+        <div className="w-fit rounded-full bg-black px-24 py-3 text-center text-xl font-black text-white">
           Sign Up
         </div>
       </Link>

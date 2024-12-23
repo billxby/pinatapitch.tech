@@ -5,7 +5,7 @@ export interface Sponsor {
     src: string;
     width: number;
     height: number;
-  }
+  };
 }
 
 export interface ScheduleItem {

@@ -14,31 +14,31 @@ export default {
         foreground: "var(--foreground)",
       },
       rotate: {
-        'y-180': 'rotateY(180deg)',
+        "y-180": "rotateY(180deg)",
       },
       screens: {
-        'twoxl': '1722px',
+        twoxl: "1722px",
       },
       textShadow: {
-        sm: '2px 2px var(--tw-shadow-color)',
-        DEFAULT: '4px 4px var(--tw-shadow-color)',
-        lg: '8px 8px var(--tw-shadow-color)',
+        sm: "2px 2px var(--tw-shadow-color)",
+        DEFAULT: "4px 4px var(--tw-shadow-color)",
+        lg: "8px 8px var(--tw-shadow-color)",
       },
       rounded: {
-        '4xl': '2rem',
-      }
+        "4xl": "2rem",
+      },
     },
   },
   plugins: [
     plugin(function ({ matchUtilities, theme }) {
       matchUtilities(
         {
-          'text-shadow': (value) => ({
+          "text-shadow": (value) => ({
             textShadow: value,
           }),
         },
-        { values: theme('textShadow') }
-      )
+        { values: theme("textShadow") }
+      );
     }),
   ],
 } satisfies Config;

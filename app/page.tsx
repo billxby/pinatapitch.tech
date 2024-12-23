@@ -1,10 +1,10 @@
-import Pros from "./components/Pros";
-import Hero from "./components/Hero";
 import CompetitionSchedule from "./components/CompetitionSchedule";
-import Prize from "./components/Prize";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import PartnersSponsors from "./components/PartnersSponsors";
-import Footer from "./components/Footer";
+import Prize from "./components/Prize";
+import Pros from "./components/Pros";
 
 export default function Home() {
   return (
