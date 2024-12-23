@@ -42,7 +42,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                   strokeLinecap="round"
                 />
               </svg>
-              <Link href="https://tally.so/r/mYoybd" target="_blank">
+              <Link href="/contact" target="_blank">
                 <div className="w-fit rounded-full bg-white px-36 py-3 text-center text-2xl font-black text-black">
                   Contact Us
                 </div>

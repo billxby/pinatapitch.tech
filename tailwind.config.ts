@@ -17,7 +17,8 @@ export default {
         "y-180": "rotateY(180deg)",
       },
       screens: {
-        twoxl: "1722px",
+        '2xl': '1722px',
+        '3xl': '2000px'
       },
       textShadow: {
         sm: "2px 2px var(--tw-shadow-color)",
