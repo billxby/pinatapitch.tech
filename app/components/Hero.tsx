@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
           Sign Up
         </div>
       </Link>
-      <div className="absolute -mb-[8.5rem] -mr-[46rem] hidden md:block 3xl:-mb-6 3xl:-mr-[72rem]">
+      <div className="absolute -mb-9 -mr-[46rem] hidden md:block 3xl:-mr-[72rem] 3xl:-mt-60">
         <svg
           width="211"
           height="188"
