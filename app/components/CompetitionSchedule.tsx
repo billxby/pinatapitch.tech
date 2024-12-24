@@ -69,7 +69,7 @@ const Schedule: React.FC = () => {
         </ul>
         <p className="text-center text-xl 3xl:text-3xl">
           Got more questions? Visit the{" "}
-          <Link href="/faq" className="font-bold underline">
+          <Link href="https://discord.gg/VC7y4D8r" className="font-bold underline">
             FAQ Page
           </Link>
           .

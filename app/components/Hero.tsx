@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
           />
         </svg>
       </div>
-      <div className="mb-7 mt-14 md:my-14 3xl:my-20">
+      {/* <div className="mb-7 mt-14 md:my-14 3xl:my-20">
         <p className="pb-6 text-xl font-bold 3xl:pb-10 3xl:text-3xl">
           backed by
         </p>
@@ -100,7 +100,7 @@ const Hero: React.FC = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
       <Image
         src="/images/Screenshot 2024-12-16 at 3.15.41 PM 1 2.png"
         alt=""

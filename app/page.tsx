@@ -14,7 +14,7 @@ export default function Home() {
       <Features />
       <CompetitionSchedule />
       <Prize />
-      <PartnersSponsors />
+      {/* <PartnersSponsors /> */}
       <Footer expanded />
     </div>
   );
