@@ -4,17 +4,17 @@ import Link from "next/link";
 import React from "react";
 import { exo2 } from "../utils/font";
 
-const frontPageSponsors = [
-  ...new Array(3).fill({
-    name: "Videotron",
-    link: "", // if in the partnership contract we have to link to them, we'll fill this field
-    image: {
-      src: "/images/sponsors/videotron.png",
-      height: 85,
-      width: 430,
-    },
-  }),
-] satisfies object[];
+// const frontPageSponsors = [
+//   ...new Array(3).fill({
+//     name: "Videotron",
+//     link: "", // if in the partnership contract we have to link to them, we'll fill this field
+//     image: {
+//       src: "/images/sponsors/videotron.png",
+//       height: 85,
+//       width: 430,
+//     },
+//   }),
+// ] satisfies object[];
 
 const Hero: React.FC = () => {
   return (
