@@ -19,27 +19,35 @@ const sponsors: Sponsor[] = [
 
 const PartnersSponsors: React.FC = () => {
   return (
-    <section className="px-40 py-12">
+    <section className="p-8 md:px-40 md:py-12">
       <h1
         className={clsx(
-          "text-center text-[5rem] font-black leading-tight",
+          "text-center text-4xl font-black leading-tight md:text-6xl 3xl:text-[5rem]",
           exo2.className
         )}
       >
         Our Partners & Sponsors
       </h1>
-      <ul className="my-24 flex w-fit flex-row flex-wrap justify-center gap-x-24 gap-y-8">
+      <ul className="my-12 flex w-fit flex-row flex-wrap justify-center gap-x-6 gap-y-4 3xl:my-20 3xl:gap-x-24 3xl:gap-y-8">
         {sponsors.map((sponsor, index) => (
           <li
             key={index}
-            className="rounded-[2.5rem] border-4 border-black p-6"
+            className="rounded-3xl border-2 border-black p-3 3xl:rounded-[2.5rem] 3xl:border-4 3xl:p-6"
           >
             {sponsor.link ? (
               <Link href={sponsor.link} target="_blank">
-                <Image {...sponsor.image} alt={sponsor.name} />
+                <Image
+                  {...sponsor.image}
+                  alt={sponsor.name}
+                  className="h-12 w-full object-contain 3xl:h-20"
+                />
               </Link>
             ) : (
-              <Image {...sponsor.image} alt={sponsor.name} />
+              <Image
+                {...sponsor.image}
+                alt={sponsor.name}
+                className="h-12 w-full object-contain 3xl:h-20"
+              />
             )}
           </li>
         ))}

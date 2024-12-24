@@ -26,33 +26,33 @@ const schedule: ScheduleItem[] = [
 
 const Schedule: React.FC = () => {
   return (
-    <section className="3xl:px-52 3xl:py-40 h-full px-44 py-32">
+    <section className="h-full px-8 py-20 md:px-44 md:py-32 3xl:px-52 3xl:py-40">
       <h1
         className={clsx(
-          "3xl:text-[5rem] text-center text-6xl font-black leading-tight",
+          "text-center text-4xl font-black leading-tight md:text-6xl 3xl:text-[5rem]",
           exo2.className
         )}
       >
         The Competition
       </h1>
       <div className="relative flex h-full flex-col items-center">
-        <ul className="3xl:before:w-2 3xl:my-20 relative my-12 h-full w-full overflow-y-hidden before:absolute before:left-1/2 before:h-full before:w-1 before:bg-[#D102A8] before:content-['']">
+        <ul className="relative my-12 h-full w-full overflow-y-hidden before:absolute before:left-1/2 before:h-full before:w-1 before:bg-[#D102A8] before:content-[''] 3xl:my-20 3xl:before:w-2">
           {schedule.map((item, index) => {
             const even = index % 2 === 0;
             return (
               <li
                 key={index}
                 className={clsx(
-                  "3xl:py-10 3xl:before:top-14 3xl:before:h-4 3xl:before:w-4 relative clear-both w-1/2 list-none py-5 before:absolute before:top-8 before:block before:h-2 before:w-2 before:rounded-full before:bg-[#D102A8] before:shadow-[0_0_0_3px_var(--tw-shadow-color)] before:shadow-[#D102A8] before:content-['']",
+                  "relative clear-both w-1/2 list-none py-5 before:absolute before:top-8 before:block before:h-2 before:w-2 before:rounded-full before:bg-[#D102A8] before:shadow-[0_0_0_3px_var(--tw-shadow-color)] before:shadow-[#D102A8] before:content-[''] 3xl:py-10 3xl:before:top-14 3xl:before:h-4 3xl:before:w-4",
                   even &&
-                    "3xl:before:-right-[12px] float-left pr-6 text-right before:-right-[6px]",
+                    "float-left pr-6 text-right before:-right-[6px] 3xl:before:-right-[12px]",
                   !even &&
-                    "3xl:before:-left-[4px] float-right ml-2 pl-8 text-left before:-left-[2px]"
+                    "float-right ml-2 pl-8 text-left before:-left-[2px] 3xl:before:-left-[4px]"
                 )}
               >
                 <h3
                   className={clsx(
-                    "3xl:text-4xl text-[1.7rem] font-bold",
+                    "text-[1.7rem] font-bold 3xl:text-4xl",
                     exo2.className
                   )}
                 >
@@ -62,12 +62,12 @@ const Schedule: React.FC = () => {
                       : `${item.title} - ${item.subtitle}`
                     : item.title}
                 </h3>
-                <p className="3xl:text-3xl text-xl">{item.description}</p>
+                <p className="text-xl 3xl:text-3xl">{item.description}</p>
               </li>
             );
           })}
         </ul>
-        <p className="3xl:text-3xl text-xl">
+        <p className="text-center text-xl 3xl:text-3xl">
           Got more questions? Visit the{" "}
           <Link href="/faq" className="font-bold underline">
             FAQ Page
@@ -75,7 +75,7 @@ const Schedule: React.FC = () => {
           .
         </p>
         <Link href="https://tally.so/r/mYoybd" target="_blank">
-          <div className="3xl:px-96 3xl:py-5 3xl:text-3xl 3xl:mt-12 mt-6 w-fit rounded-full bg-[#D102A8] px-64 py-3 text-center text-xl font-black text-white">
+          <div className="mt-8 w-fit rounded-full bg-[#D102A8] px-28 py-3 text-center text-xl font-black text-white md:mt-12 md:px-64 3xl:px-96 3xl:py-5 3xl:text-3xl">
             Sign Up
           </div>
         </Link>

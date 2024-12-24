@@ -10,13 +10,13 @@ export interface Sponsor {
 
 export interface Mentor {
   name: string;
-  link?: string; // if the mentor wants us to link to their linkedin or another link we'll fill this field 
+  link?: string; // if the mentor wants us to link to their linkedin or another link we'll fill this field
   biography: string;
   image: {
     src: string;
     width: number;
     height: number;
-  }
+  };
 }
 
 export interface ScheduleItem {

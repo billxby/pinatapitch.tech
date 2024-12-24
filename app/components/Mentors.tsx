@@ -10,7 +10,7 @@ const mentors: Mentor[] = [
   {
     name: "Myles Shedden",
     biography:
-      "Co-Founder @ SkiptheDishes, CFO of Hyperlume & VP at Longbow Capital",
+      "Prev. VP @ SkipTheDishes, CFO of Hyperlume & VP at Longbow Capital",
     image: {
       src: "/images/mentors/myles_shedden.jpg",
       height: 430,
@@ -36,7 +36,7 @@ const mentors: Mentor[] = [
       width: 430,
     },
   },
-  ...new Array(13).fill({
+  ...new Array(10).fill({
     name: "Santa CLOSED",
     biography:
       "Nom nom nom yum hohoho cookie coca cola more text to check if its gonna overflow",
@@ -51,16 +51,16 @@ const mentors: Mentor[] = [
 
 const MentorsJudges: React.FC = () => {
   return (
-    <section className="3xl:mt-40 mt-24 px-[5%]">
+    <section className="mt-32 px-[5%] 3xl:mt-40">
       <h1
         className={clsx(
-          "my-8 text-center text-[5rem] font-black leading-tight",
+          "text-center text-6xl font-black leading-tight md:my-8 md:text-[5rem]",
           exo2.className
         )}
       >
         Judges & Mentors
       </h1>
-      <ul className="my-24 flex w-fit flex-row flex-wrap justify-center gap-x-24 gap-y-8 text-center">
+      <ul className="my-12 flex w-fit flex-row flex-wrap justify-center gap-x-24 gap-y-8 text-center md:my-24">
         {mentors.map((mentor, index) => (
           <li key={index} className="max-w-96 p-6 text-center">
             {mentor.link ? (

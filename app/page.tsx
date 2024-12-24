@@ -8,7 +8,7 @@ import Prize from "./components/Prize";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full max-w-full">
       <Navbar />
       <Hero />
       <Features />

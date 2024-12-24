@@ -109,35 +109,35 @@ const features = [
 
 const Features: React.FC = () => {
   return (
-    <section className="3xl:px-52 3xl:py-40 bg-black px-44 py-32">
+    <section className="bg-black px-8 py-20 md:px-44 md:py-32 3xl:px-52 3xl:py-40">
       <div className="mx-auto">
         <h1
           className={clsx(
-            "3xl:text-[5rem] text-center text-6xl font-black leading-tight text-white",
+            "text-center text-4xl font-black leading-tight text-white md:text-6xl 3xl:text-[5rem]",
             exo2.className
           )}
         >
           Empowering Montreal&apos;s Next Generation of Entrepreneurs
         </h1>
-        <div className="3xl:gap-24 flex flex-col gap-6 pt-16 xl:flex-row">
+        <div className="flex flex-col justify-center gap-6 pt-16 xl:flex-row 3xl:gap-24">
           {features.map((feature, index) => {
             return (
               <div
                 className="flex flex-col items-center p-4 text-center"
                 key={index}
               >
-                <div className="3xl:h-32 3xl:w-32 -mt-4 mb-4 flex h-24 w-24 items-center justify-center rounded-full px-1">
+                <div className="-mt-4 mb-4 flex h-24 w-24 items-center justify-center rounded-full px-1 3xl:h-32 3xl:w-32">
                   {feature.icon}
                 </div>
                 <h3
                   className={clsx(
-                    "3xl:text-4xl text-[1.7rem] font-black leading-snug text-white",
+                    "text-[1.7rem] font-black leading-snug text-white 3xl:text-4xl",
                     exo2.className
                   )}
                 >
                   {feature.headline}
                 </h3>
-                <p className="3xl:text-3xl w-2/3 text-xl leading-snug text-white">
+                <p className="w-2/3 text-xl leading-snug text-white 3xl:text-3xl">
                   {feature.description}
                 </p>
               </div>
