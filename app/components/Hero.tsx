@@ -18,7 +18,7 @@ const frontPageSponsors = [
 
 const Hero: React.FC = () => {
   return (
-    <section className="mt-24 flex min-h-screen flex-col items-center justify-center pt-4 text-center 3xl:mt-40">
+    <section className="mt-24 flex min-h-screen flex-col items-center justify-center px-10 pt-4 text-center 3xl:mt-40">
       <Image
         src="/images/Screenshot 2024-12-16 at 3.15.41 PM 1 1.png"
         width="606"
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
       </div>
       <h1
         className={clsx(
-          "mb-2 text-center text-6xl font-black md:mb-0 md:text-9xl md:leading-relaxed 3xl:text-[11rem]",
+          "mb-2 text-center text-[3.45rem] font-black leading-none md:mb-0 md:text-9xl md:leading-relaxed 3xl:text-[11rem]",
           exo2.className
         )}
       >
