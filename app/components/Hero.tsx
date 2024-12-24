@@ -57,14 +57,14 @@ const Hero: React.FC = () => {
           Sign Up
         </div>
       </Link>
-      <div className="absolute -mb-9 -mr-[46rem] hidden md:block 3xl:-mr-[72rem] 3xl:-mt-60">
+      <div className="absolute -mb-9 -mr-[46rem] hidden md:-mb-[21.5rem] md:block 3xl:-mb-[23rem] 3xl:-mr-[72rem]">
         <svg
           width="211"
           height="188"
           viewBox="0 0 211 188"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-28 object-contain 3xl:w-52"
+          className="w-28 object-contain 3xl:w-48"
         >
           <path
             d="M205.987 -44C182.959 16.468 120.372 124.94 47.047 89.13C-3.016 64.682 35.249 10.811 88.984 39.682C142.719 68.553 126.941 171.782 8 161.802M8 161.802L23.967 143.704M8 161.802L32.672 182.436"
