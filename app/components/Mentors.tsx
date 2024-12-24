@@ -36,17 +36,17 @@ const mentors: Mentor[] = [
       width: 430,
     },
   },
-  ...new Array(10).fill({
-    name: "Santa CLOSED",
-    biography:
-      "Nom nom nom yum hohoho cookie coca cola more text to check if its gonna overflow",
-    link: "https://github.com/adntaha",
-    image: {
-      src: "/images/mentors/placeholder_mentor.png",
-      height: 430,
-      width: 430,
-    },
-  }),
+  // ...new Array(10).fill({
+  //   name: "Santa CLOSED",
+  //   biography:
+  //     "Nom nom nom yum hohoho cookie coca cola more text to check if its gonna overflow",
+  //   link: "https://github.com/adntaha",
+  //   image: {
+  //     src: "/images/mentors/placeholder_mentor.png",
+  //     height: 430,
+  //     width: 430,
+  //   },
+  // }),
 ] satisfies object[];
 
 const MentorsJudges: React.FC = () => {
