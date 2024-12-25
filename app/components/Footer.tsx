@@ -10,7 +10,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = (props) => {
   return (
-    <section className="w-full bg-black px-10 text-white md:px-20 3xl:px-40">
+    <section className="w-full bg-black px-8 text-white md:px-20 3xl:px-40">
       {props.expanded ? (
         <div className="mt-2 flex flex-col border-b border-neutral-600 py-8 text-center md:mt-6 md:py-16 md:text-left 3xl:mt-12 3xl:py-24">
           <h3

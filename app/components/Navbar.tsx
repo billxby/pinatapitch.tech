@@ -6,7 +6,7 @@ import { exo2 } from "../utils/font";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="fixed left-0 top-0 z-10 flex w-full flex-row items-center border-b border-neutral-300 bg-white px-10 py-6 md:px-20 3xl:px-40 3xl:py-12">
+    <nav className="fixed left-0 top-0 z-10 flex w-full flex-row items-center border-b border-neutral-300 bg-white px-8 py-6 md:px-20 3xl:px-40 3xl:py-12">
       <Link href="/">
         <div
           className={clsx(

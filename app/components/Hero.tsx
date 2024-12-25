@@ -19,7 +19,7 @@ const frontPageSponsors: Sponsor[] = [
 
 const Hero: React.FC = () => {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center px-10 pt-4 text-center 3xl:mt-12">
+    <section className="flex min-h-screen flex-col items-center justify-center px-8 pt-4 text-center 3xl:mt-12">
       <Image
         src="/images/Screenshot 2024-12-16 at 3.15.41 PM 1 1.png"
         width="606"
