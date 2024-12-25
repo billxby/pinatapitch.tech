@@ -3,18 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { exo2 } from "../utils/font";
+import { Sponsor } from "../utils/types";
 
-// const frontPageSponsors = [
-//   ...new Array(3).fill({
-//     name: "Videotron",
-//     link: "", // if in the partnership contract we have to link to them, we'll fill this field
-//     image: {
-//       src: "/images/sponsors/videotron.png",
-//       height: 85,
-//       width: 430,
-//     },
-//   }),
-// ] satisfies object[];
+const frontPageSponsors: Sponsor[] = [
+  // ...new Array(3).fill({
+  //   name: "Videotron",
+  //   link: "", // if in the partnership contract we have to link to them, we'll fill this field
+  //   image: {
+  //     src: "/images/sponsors/videotron.png",
+  //     height: 85,
+  //     width: 430,
+  //   },
+  // }),
+] satisfies object[];
 
 const Hero: React.FC = () => {
   return (
@@ -75,32 +76,34 @@ const Hero: React.FC = () => {
           />
         </svg>
       </div>
-      {/* <div className="mb-7 mt-14 md:my-14 3xl:my-20">
-        <p className="pb-6 text-xl font-bold 3xl:pb-10 3xl:text-3xl">
-          backed by
-        </p>
-        <ul className="mx-auto grid grid-flow-col grid-rows-3 gap-4 md:grid-flow-row md:grid-cols-1 md:gap-0 lg:grid-cols-3 3xl:gap-12">
-          {frontPageSponsors.map((sponsor, index) => (
-            <li key={index} className="px-4 md:px-0">
-              {sponsor.link ? (
-                <Link href={sponsor.link} target="_blank">
+      {frontPageSponsors.length ? (
+        <div className="mb-7 mt-14 md:my-14 3xl:my-20">
+          <p className="pb-6 text-xl font-bold 3xl:pb-10 3xl:text-3xl">
+            backed by
+          </p>
+          <ul className="mx-auto grid grid-flow-col grid-rows-3 gap-4 md:grid-flow-row md:grid-cols-1 md:gap-0 lg:grid-cols-3 3xl:gap-12">
+            {frontPageSponsors.map((sponsor, index) => (
+              <li key={index} className="px-4 md:px-0">
+                {sponsor.link ? (
+                  <Link href={sponsor.link} target="_blank">
+                    <Image
+                      {...sponsor.image}
+                      alt={sponsor.name}
+                      className="object-contain lg:h-12 3xl:h-20"
+                    />
+                  </Link>
+                ) : (
                   <Image
                     {...sponsor.image}
                     alt={sponsor.name}
                     className="object-contain lg:h-12 3xl:h-20"
                   />
-                </Link>
-              ) : (
-                <Image
-                  {...sponsor.image}
-                  alt={sponsor.name}
-                  className="object-contain lg:h-12 3xl:h-20"
-                />
-              )}
-            </li>
-          ))}
-        </ul>
-      </div> */}
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
       <Image
         src="/images/Screenshot 2024-12-16 at 3.15.41 PM 1 2.png"
         alt=""
