@@ -3,22 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { exo2 } from "../utils/font";
+import { Sponsor } from "../utils/types";
 
-// const frontPageSponsors = [
-//   ...new Array(3).fill({
-//     name: "Videotron",
-//     link: "", // if in the partnership contract we have to link to them, we'll fill this field
-//     image: {
-//       src: "/images/sponsors/videotron.png",
-//       height: 85,
-//       width: 430,
-//     },
-//   }),
-// ] satisfies object[];
+const frontPageSponsors: Sponsor[] = [
+  // ...new Array(3).fill({
+  //   name: "Videotron",
+  //   link: "", // if in the partnership contract we have to link to them, we'll fill this field
+  //   image: {
+  //     src: "/images/sponsors/videotron.png",
+  //     height: 85,
+  //     width: 430,
+  //   },
+  // }),
+] satisfies object[];
 
 const Hero: React.FC = () => {
   return (
-    <section className="mt-24 flex min-h-screen flex-col items-center justify-center px-10 pt-4 text-center 3xl:mt-40">
+    <section className="flex min-h-screen flex-col items-center justify-center px-8 pt-4 text-center 3xl:mt-12">
       <Image
         src="/images/Screenshot 2024-12-16 at 3.15.41 PM 1 1.png"
         width="606"
@@ -28,7 +29,7 @@ const Hero: React.FC = () => {
       />
       <div
         className={clsx(
-          "text-xl font-black md:mb-2 md:text-4xl 3xl:text-2xl",
+          "text-xl font-black md:mb-2 md:text-4xl 3xl:text-5xl",
           exo2.className
         )}
       >
@@ -48,72 +49,93 @@ const Hero: React.FC = () => {
       >
         Piñata Pitch
       </h1>
-      <h2 className="text-center text-2xl font-semibold leading-snug text-neutral-500 md:text-[2.75rem] 3xl:text-6xl">
+      <h2 className="text-center text-2xl font-semibold leading-snug text-neutral-500 md:text-[2.75rem] md:leading-none 3xl:text-6xl">
         Igniting passion for entrepreneurship <br className="hidden md:block" />
         in Montreal
       </h2>
-      <Link href="https://tally.so/r/mYoybd" target="_blank">
-        <div className="mt-8 w-fit rounded-full bg-[#D102A8] px-24 py-3 text-center text-xl font-black text-white md:mt-12 md:px-64 3xl:px-96 3xl:py-5 3xl:text-3xl">
-          Sign Up
+      <div className="relative">
+        <Link href="https://tally.so/r/mYoybd" target="_blank">
+          <div className="mt-8 w-fit rounded-full bg-[#D102A8] px-24 py-3 text-center text-xl font-black text-white md:mt-12 md:px-64 3xl:px-96 3xl:py-5 3xl:text-3xl">
+            Sign Up
+          </div>
+        </Link>
+        <div className="absolute -mb-9 -mr-[46rem] hidden md:-mt-[9.75rem] md:ml-[38rem] md:block 3xl:-mt-[15.5rem] 3xl:ml-[57rem]">
+          <svg
+            width="211"
+            height="188"
+            viewBox="0 0 211 188"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-28 object-contain 3xl:h-72 3xl:w-48"
+          >
+            <path
+              d="M205.987 -44C182.959 16.468 120.372 124.94 47.047 89.13C-3.016 64.682 35.249 10.811 88.984 39.682C142.719 68.553 126.941 171.782 8 161.802M8 161.802L23.967 143.704M8 161.802L32.672 182.436"
+              stroke="#1F1F1F"
+              strokeOpacity="0.8"
+              strokeWidth="10"
+              strokeLinecap="round"
+            />
+          </svg>
         </div>
-      </Link>
-      <div className="absolute -mb-[8.5rem] -mr-[46rem] hidden md:block 3xl:-mb-6 3xl:-mr-[72rem]">
-        <svg
-          width="211"
-          height="188"
-          viewBox="0 0 211 188"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-28 object-contain 3xl:w-52"
-        >
-          <path
-            d="M205.987 -44C182.959 16.468 120.372 124.94 47.047 89.13C-3.016 64.682 35.249 10.811 88.984 39.682C142.719 68.553 126.941 171.782 8 161.802M8 161.802L23.967 143.704M8 161.802L32.672 182.436"
-            stroke="#1F1F1F"
-            strokeOpacity="0.8"
-            strokeWidth="10"
-            strokeLinecap="round"
-          />
-        </svg>
       </div>
-      {/* <div className="mb-7 mt-14 md:my-14 3xl:my-20">
-        <p className="pb-6 text-xl font-bold 3xl:pb-10 3xl:text-3xl">
-          backed by
-        </p>
-        <ul className="mx-auto grid grid-flow-col grid-rows-3 gap-4 md:grid-flow-row md:grid-cols-1 md:gap-0 lg:grid-cols-3 3xl:gap-12">
-          {frontPageSponsors.map((sponsor, index) => (
-            <li key={index} className="px-4 md:px-0">
-              {sponsor.link ? (
-                <Link href={sponsor.link} target="_blank">
+      {frontPageSponsors.length ? (
+        <div className="relative mb-7 mt-14 md:my-14 3xl:my-20">
+          <div className="absolute -ml-12 -mt-48 hidden md:block 3xl:-mt-56">
+            <svg
+              width="296"
+              height="271"
+              viewBox="0 0 296 271"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-36 object-contain 3xl:w-56"
+            >
+              <path
+                d="M5 10.139C43 -1.19401 118.5 -1.161 116.5 89.639C114.5 180.439 229.33 241.139 287 260.139M287 260.139L267.5 231M287 260.139L252.5 266"
+                stroke="#424242"
+                strokeWidth="10"
+                strokeLinecap="round"
+              />
+            </svg>
+          </div>
+          <p className="pb-6 text-xl font-bold 3xl:pb-10 3xl:text-3xl">
+            backed by
+          </p>
+          <ul className="mx-auto grid grid-flow-col grid-rows-3 gap-4 md:grid-flow-row md:grid-cols-3 md:grid-rows-1 md:gap-8 3xl:gap-12">
+            {frontPageSponsors.map((sponsor, index) => (
+              <li key={index} className="px-4 md:px-0">
+                {sponsor.link ? (
+                  <Link href={sponsor.link} target="_blank">
+                    <Image
+                      {...sponsor.image}
+                      alt={sponsor.name}
+                      className="w-fit object-contain md:h-12 3xl:h-20"
+                    />
+                  </Link>
+                ) : (
                   <Image
                     {...sponsor.image}
                     alt={sponsor.name}
-                    className="object-contain lg:h-12 3xl:h-20"
+                    className="w-fit object-contain md:h-12 3xl:h-20"
                   />
-                </Link>
-              ) : (
-                <Image
-                  {...sponsor.image}
-                  alt={sponsor.name}
-                  className="object-contain lg:h-12 3xl:h-20"
-                />
-              )}
-            </li>
-          ))}
-        </ul>
-      </div> */}
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
       <Image
         src="/images/Screenshot 2024-12-16 at 3.15.41 PM 1 2.png"
         alt=""
         width="369"
         height="684"
-        className="absolute left-0 -z-10 -mt-48 hidden w-[16rem] object-contain lg:block 3xl:w-[23rem]"
+        className="absolute left-0 -z-10 -mt-24 hidden w-[16rem] object-contain lg:block 3xl:w-[23rem]"
       />
       <Image
         src="/images/Screenshot 2024-12-16 at 3.15.41 PM 1 2.png"
         alt=""
         width="369"
         height="684"
-        className="absolute right-0 -z-10 -mt-48 hidden w-[16rem] -scale-x-100 transform object-contain lg:block 3xl:w-[23rem]"
+        className="absolute right-0 -z-10 -mt-24 hidden w-[16rem] -scale-x-100 transform object-contain lg:block 3xl:w-[23rem]"
       />
     </section>
   );

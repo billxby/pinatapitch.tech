@@ -5,12 +5,12 @@ import React from "react";
 import { exo2 } from "../utils/font";
 
 interface FooterProps {
-  expanded: boolean;
+  expanded?: boolean;
 }
 
 const Footer: React.FC<FooterProps> = (props) => {
   return (
-    <section className="w-full bg-black px-10 text-white md:px-20 3xl:px-40">
+    <section className="w-full bg-black px-8 text-white md:px-20 3xl:px-40">
       {props.expanded ? (
         <div className="mt-2 flex flex-col border-b border-neutral-600 py-8 text-center md:mt-6 md:py-16 md:text-left 3xl:mt-12 3xl:py-24">
           <h3
@@ -42,7 +42,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                   strokeLinecap="round"
                 />
               </svg>
-              <Link href="/contact" target="_blank">
+              <Link href="/contact">
                 <div className="mt-4 w-fit rounded-full bg-white px-24 py-2 text-center text-lg font-black text-black md:mt-0 3xl:px-36 3xl:py-3 3xl:text-2xl">
                   Contact Us
                 </div>
@@ -52,27 +52,25 @@ const Footer: React.FC<FooterProps> = (props) => {
         </div>
       ) : null}
       <footer className="flex w-full flex-row items-center bg-black py-6 text-white 3xl:py-12">
-        <Link href="/">
-          <div
-            className={clsx(
-              "flex flex-row items-center gap-1 text-[0px] font-black md:text-2xl 3xl:gap-2 3xl:text-3xl",
-              exo2.className
-            )}
-          >
-            <Image
-              src="/images/Pinata Pitch Logo 2.png"
-              alt="Piñata Pitch"
-              width="60"
-              height="46"
-              className="mr-2 h-8 w-fit object-contain 3xl:h-11"
-            />
-            Piñata Pitch
-          </div>
-        </Link>
+        <div
+          className={clsx(
+            "flex flex-row items-center gap-1 text-[0px] font-black md:text-2xl 3xl:gap-2 3xl:text-3xl",
+            exo2.className
+          )}
+        >
+          <Image
+            src="/images/Pinata Pitch Logo 2.png"
+            alt="Piñata Pitch"
+            width="60"
+            height="46"
+            className="mr-2 h-8 w-fit object-contain 3xl:h-11"
+          />
+          Piñata Pitch
+        </div>
         <p className="ml-auto w-fit text-lg font-semibold md:max-w-[20%] md:text-right 3xl:text-2xl">
           Made by entrepreneurial minds for entrepreneurial minds.
         </p>
-      </footer>{" "}
+      </footer>
     </section>
   );
 };
