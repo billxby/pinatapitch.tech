@@ -9,12 +9,12 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <section className="mt-16 min-h-screen px-8 py-12 md:px-44 md:py-48 3xl:px-52 3xl:py-56">
+      <section className="mt-16 min-h-screen px-8 py-12 md:px-20 md:py-48 3xl:px-40 3xl:py-56">
         <div className="flex h-full flex-col md:flex-row md:justify-between">
           <div>
             <h1
               className={clsx(
-                "text-center text-4xl font-black leading-tight md:text-6xl 3xl:text-[5rem]",
+                "text-center text-4xl font-black leading-tight md:text-left md:text-6xl 3xl:text-[5rem]",
                 exo2.className
               )}
             >
