@@ -51,10 +51,25 @@ const mentors: Mentor[] = [
 
 const MentorsJudges: React.FC = () => {
   return (
-    <section className="mt-32 px-[5%] 3xl:mt-40">
+    <section className="mt-32 flex flex-col items-center px-[5%] 3xl:mt-48">
+      <div
+        className={clsx(
+          "hidden text-2xl font-black md:flex md:flex-row md:items-center lg:gap-1 3xl:gap-2 3xl:text-3xl",
+          exo2.className
+        )}
+      >
+        <Image
+          src="/images/Pinata Pitch Logo 2.png"
+          alt="Piñata Pitch"
+          width="60"
+          height="46"
+          className="mr-2 h-8 w-fit object-contain 3xl:h-11"
+        />
+        Piñata Pitch
+      </div>
       <h1
         className={clsx(
-          "text-center text-6xl font-black leading-tight md:my-8 md:text-[5rem]",
+          "text-center text-6xl font-black leading-tight md:text-[5rem]",
           exo2.className
         )}
       >

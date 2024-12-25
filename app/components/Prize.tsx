@@ -12,7 +12,7 @@ const Prize: React.FC = () => {
           width="312"
           height="284"
           alt="Confetti"
-          className="absolute -mt-[20.5rem] ml-[12rem] h-24 w-fit object-contain md:-mt-[14.5rem] md:ml-[32rem] md:h-36 3xl:-mt-[26rem] 3xl:ml-[52rem] 3xl:h-80"
+          className="absolute -mt-[20.5rem] ml-[12rem] h-24 w-fit object-contain md:-mt-[14.5rem] md:ml-[36rem] md:h-36 3xl:-mt-[27rem] 3xl:ml-[52rem] 3xl:h-80"
           draggable="false"
         />
         <Image
@@ -43,7 +43,7 @@ const Prize: React.FC = () => {
           width="312"
           height="284"
           alt="Confetti"
-          className="absolute -ml-[1rem] -mt-[20.5rem] h-24 w-fit rotate-180 transform object-contain md:-ml-[20.5rem] md:mt-[5rem] md:h-36 3xl:-ml-[30rem] 3xl:h-80"
+          className="absolute -ml-[1rem] -mt-[20.5rem] h-24 w-fit rotate-180 transform object-contain md:-ml-[15.5rem] md:mt-[5rem] md:h-36 3xl:-ml-[31rem] 3xl:mt-[4rem] 3xl:h-80"
           draggable="false"
           // onClick={() => {}}
         />
