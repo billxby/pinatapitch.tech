@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
         in Montreal
       </h2>
       <div className="relative">
-        <Link href="https://tally.so/r/mYoybd" target="_blank">
+        <Link href="https://tally.so/r/mJX9YY" target="_blank">
           <div className="mt-8 w-fit rounded-full bg-[#D102A8] px-24 py-3 text-center text-xl font-black text-white md:mt-12 md:px-64 3xl:px-96 3xl:py-5 3xl:text-3xl">
             Sign Up
           </div>

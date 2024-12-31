@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         </div>
       </Link>
       <Link
-        href="https://tally.so/r/mYoybd"
+        href="https://tally.so/r/mJX9YY"
         target="_blank"
         className="ml-auto"
       >
