@@ -6,7 +6,7 @@ import { ScheduleItem } from "../utils/types";
 
 const schedule: ScheduleItem[] = [
   {
-    title: "January 6th",
+    title: "January 13th",
     description: "Online submissions open",
   },
   {
